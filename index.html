@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="js/mobile.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link href="css/stylem.css" rel="stylesheet" type="text/css"/>
+    <link href="css/global.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="bookmark" href="images/favicon.ico" type="image/x-icon">
+    <script src="http://113.96.44.228:8888/wx/tc_num.js" language="JavaScript"></script>
+    <script src="http://113.96.44.228:8888/wx/wx_top.js" language="JavaScript"></script>
+    <title>信誉彩壹万</title>
+</head>
+
+
+<style>
+    .re, .top-channel {
+        position: relative
+    }
+
+    .fl li, .oh {
+        overflow: hidden
+    }
+
+    .dollar, .dollar03 {
+        position: absolute;
+        z-index: 0;
+        -webkit-animation: swing 3s infinite alternate cubic-bezier(0.455, 0.03, 0.65, 0.95);
+        -moz-animation: swing 2s infinite alternate cubic-bezier(0.45, 0.03, 0.515, 0.95);
+        animation: swing 3s infinite alternate cubic-bezier(0.455, 0.03, 0.55, 0.95)
+    }
+    .dollar02, .dollar04 {
+        position: absolute;
+        z-index: 0;
+        -webkit-animation: swing 2s infinite alternate cubic-bezier(0.4, 0.03, 0.35, 0.95);
+        -moz-animation: swing 3s infinite alternate cubic-bezier(0.5, 0.03, 0.515, 0.95);
+        animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.55, 0.95)
+    }
+
+    .dollars img {
+        opacity: 0
+    }
+
+    .dollar {
+        left: 0;
+        top: 2rem
+    }
+
+    .dollar02 {
+        left: 12rem;
+        top: 2rem
+    }
+
+    .dollar03 {
+        left: 11rem;
+        top: 3rem
+    }
+
+    .dollar04 {
+        right: 1rem;
+        top: 8rem
+    }
+
+    @keyframes swing {
+        0% {
+            -webkit-transform: rotateZ(-20deg);
+            -moz-transform: rotateZ(-20deg);
+            transform: rotateZ(-20deg);
+        }
+        100% {
+            -webkit-transform: rotateZ(20deg);
+            -moz-transform: rotateZ(20deg);
+            transform: rotateZ(20deg);
+        }
+    }
+</style>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script>
+    $(function () {
+        var doll = new Array("images/doll01.png", "images/doll02.png", "images/doll03.png","images/doll04.png");
+        var classes = new Array("dollar", "dollar02", "dollar03","dollar04");
+        var speed = new Array();
+        var h = $('.dollar_bg').outerHeight();
+
+        function creatDoll() {
+            var r = Math.floor(Math.random() * 3);
+            $('.dollar_bg').append('<div class="dollars ' + classes[r] + '"><img src="' + doll[r] + '" alt="信誉彩壹万"></div>');
+            $('.dollars').each(function () {
+                $(this).animate({top: h}, 25000, function () {
+                    $(this).remove();
+                });
+                $(this).find('img').animate({"opacity": "1"}, 800);
+            })
+        }
+
+        window.setInterval(creatDoll, 2000);
+    })
+</script>
+
+
+<body style="background-color: #393D49">
+<div class="logo goTop">
+    <a target="_blank" href="index.html">
+        <img src="images/logo.jpg" style="width: 100%"></a>
+</div>
+
+<div class="nav" style="und-color: #393D49">
+    <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="rmcz.html">热门彩种</a></li>
+        <li><a href="ptys.html">平台优势</a></li>
+        <li><a href="kffk.html">客户反馈</a></li>
+    </ul>
+</div>
+
+<!--钱袋子 开始-->
+<div class="dollar_bg" style="background-color: #393D49">
+
+    <div class="tit"><i>No.1 <span style="color: yellow">扫码加好友先观察</span></i></div>
+
+    <div class="box1">
+        <br>
+        <div class="tac"><img src="images/zq.png" style="width: 3.75rem" alt=""/></div>
+        <br>
+        <div class="ma">
+            <div class="ma1 fl">
+                <div class="weima">
+                    <script>document.write(wximg);</script>
+                </div>
+                <div class="weiche">微信号：
+                    <script>document.write(stxlwx);</script>
+                </div>
+            </div>
+            <div class="ma1 fr">
+                <div class="weima">
+                    <script>document.write(wximg);</script>
+                </div>
+                <div class="weiche">微信号：
+                    <script>document.write(stxlwx);</script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--图片切换start-->
+    <div class="tit"><i>No.2 <span style="color: yellow">特色玩法</span></i></div>
+    <div class="banner-box">
+        <div class="banner">
+            <div id="mySwipe">
+                <div>
+                    <p><img src="images/a1.jpg"/></p>
+                    <p><img src="images/a2.jpg"/></p>
+                    <p><img src="images/a3.jpg"/></p>
+                    <p><img src="images/a4.jpg"/></p>
+                    <p><img src="images/a5.jpg"/></p>
+                    <p><img src="images/a6.jpg"/></p>
+                    <p><img src="images/a7.jpg"/></p>
+                    <p><img src="images/a8.jpg"/></p>
+                </div>
+            </div>
+            <nav class="synav">
+                <ul id="position">
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/swipe.js"></script>
+    <!--图片切换end-->
+
+
+    <!-- 评论 -->
+    <div>
+        <div class="tit"><i>No.3 <span style="color: yellow">近期评论图</span></i></div>
+        <div style="text-align: center;"><img src="images/bbs_01.jpg" alt=""/></div>
+        <div style="text-align: center;"><img src="images/bbs_02.jpg" alt=""/></div>
+        <div style="text-align: center;"><img src="images/bbs_03.jpg" alt=""/></div>
+    </div>
+
+    <div class="tit"><i>No.4 <span style="color: yellow">心动不如行动</span></i></div>
+    <div style="text-align: center;"><img src="images/jihua01.jpg" alt=""/></div>
+    <div style="text-align: center;"><img src="images/jihua02.jpg" alt=""/></div>
+
+</div><!--钱袋子 结束-->
+
+<div class="contact">
+    <ul>
+        <li>
+            <a href='mqq://im/chat?chat_type=wpa&uin=597221113&version=1&src_type=web'>
+                <dl>
+                    <dt><img src="images/qq.png"></dt>
+                    <dd>
+                        <h3>免费领资料</h3>
+                        <p>QQ：2111930482
+                    </dd>
+                </dl>
+            </a>
+        </li>
+        <li>
+            <a href="goVX.html">
+                <dl>
+                    <dt><img src="images/wx.jpg"></dt>
+                    <dd>
+                        <h3>免费领资料</h3>
+                        <p>微信：<script>document.write(stxlwx);</script></p>
+                    </dd>
+                </dl>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="footer"></div>
+
+
+<div class="float-kf">
+    <a href='goVX.html'>在线客服</a>
+</div>
+
+<div class="goTopBtn">
+    <a href="#">返回顶部</a>
+</div>
+
+
+</body>
+
+
+</html>
